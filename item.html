@@ -56,7 +56,7 @@
       <!-- AddItem section start -->
       <div class="addItem">
         <div class="Additemcard">
-          <h3>Add Item</h3>
+          <h3 id="title">Add Item</h3>
           <div class="picture"></div>
           <input type="text" name="code" id="code" placeholder="Item code" />
           <input type="text" name="name" id="name" placeholder="Item name" />
@@ -76,14 +76,14 @@
             />
           </div>
           <div class="btton">
-            <button class="Add">ADD</button>
-            <button class="Cancel">Cancel</button>
+            <button class="Add" id="itemAdd">ADD</button>
+            <button class="Cancel" id="itemCancel">Cancel</button>
           </div>
         </div>
       </div>
       <!-- AddItem section end -->
 
-      <div class="itemcardCollection">
+      <div class="itemcardCollection" id="cardRow">
         <div class="itemCard">
           <div class="cardPic">
             <div class="CardPicItem"></div>
@@ -108,10 +108,11 @@
 
               <span>7</span>
             </div>
+            <p style="text-align: center; color: orangered">1,000.00</p>
             <div class="line"></div>
             <div class="editDelete">
               <div class="edit">
-                <div class="iconEdit"></div>
+                <div class="iconEdit" id="itemedit"></div>
               </div>
               <div class="Delete">
                 <div class="iconDelete"></div>
@@ -143,6 +144,7 @@
 
               <span>8</span>
             </div>
+            <p style="text-align: center; color: orangered">1,500.00</p>
             <div class="line"></div>
             <div class="editDelete">
               <div class="edit">
@@ -179,6 +181,7 @@
 
               <span>10</span>
             </div>
+            <p style="text-align: center; color: orangered">2,000.00</p>
             <div class="line"></div>
             <div class="editDelete">
               <div class="edit">
@@ -194,5 +197,6 @@
     </div>
     <!-- Cotainer section end -->
     <script src="JS/script.js"></script>
+    <script src="JS/item.js"></script>
   </body>
 </html>
