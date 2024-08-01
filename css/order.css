@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.container {
+.container1 {
   width: 80%;
   height: 90vh;
   background: rgba(255, 255, 255, 0.5);
@@ -26,7 +26,7 @@ body {
   border-radius: 32px;
 }
 /* side bar styling start */
-.sidebar {
+.sidebar1 {
   grid-area: a;
   background: rgba(255, 105, 0, 0.7);
   display: flex;
@@ -55,6 +55,7 @@ body {
   background-image: url("imges/Home.png");
   background-position: center;
   background-size: cover;
+  margin-bottom: 10px;
 }
 .icon1 {
   width: 100%;
@@ -62,6 +63,7 @@ body {
   background-image: url("imges/Order.png");
   background-position: center;
   background-size: cover;
+  margin-bottom: 10px;
 }
 .icon2 {
   width: 100%;
@@ -69,6 +71,7 @@ body {
   background-image: url("imges/Customer.png");
   background-position: center;
   background-size: cover;
+  margin-bottom: 10px;
 }
 .icon3 {
   width: 100%;
@@ -76,6 +79,7 @@ body {
   background-image: url("imges/Report.png");
   background-position: center;
   background-size: cover;
+  margin-bottom: 10px;
 }
 .icon4 {
   width: 100%;
@@ -83,6 +87,7 @@ body {
   background-image: url("imges/Item.png");
   background-position: center;
   background-size: cover;
+  margin-bottom: 10px;
 }
 .name {
   width: 100%;
@@ -234,3 +239,7 @@ body {
   font-family: "Abril Fatface", serif;
 }
 /* sales person styling end */
+
+#tblFilter {
+  display: none;
+}

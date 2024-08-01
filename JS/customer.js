@@ -60,3 +60,8 @@ document.getElementById("delete").addEventListener("click", () => {
 document.getElementById("delete1").addEventListener("click", () => {
   document.getElementById("card2").remove();
 });
+
+document.getElementById("edit2").addEventListener("click", () => {
+  document.getElementById("addcustomer").innerText = "UpdateCustomer";
+  document.getElementById("save").innerText = "Update";
+});

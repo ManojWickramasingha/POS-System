@@ -19,11 +19,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container1">
       <!-- side bar section start -->
-      <div class="sidebar">
+      <div class="sidebar1">
         <div class="item1" onclick="myFunc()">
           <div class="icon"></div>
           <div class="name"><p>Home</p></div>
@@ -54,12 +67,30 @@
         <h1>MOS BUGGER</h1>
       </div>
       <div class="filtter">
-        <button type="button" class="fbtn">
+        <!-- <button type="button" class="fbtn">
           Fillter items
           <i class="fa-solid fa-caret-down iconDr"></i>
-        </button>
+        </button> -->
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#" id="datefil">Date</a></li>
+            <li><a class="dropdown-item" href="#" id="priceFil">Price</a></li>
+            <li>
+              <a class="dropdown-item" href="#" id="progreFil">progress</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="orderRecipt">
+      <div class="orderRecipt" id="orderRecip">
         <div class="detials">
           <div class="logo"></div>
           <h4>Bugger(Regular)</h4>
@@ -72,6 +103,19 @@
           <p class="totalPrice">Total Price : 2,000.00</p>
         </div>
       </div>
+
+      <table class="table" id="tblFilter">
+        <thead>
+          <tr>
+            <th scope="col">OrderId</th>
+            <th scope="col">Date</th>
+            <th scope="col">SalesPerson</th>
+            <th scope="col" id="price">Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
       <div class="salesperson">
         <div class="details1">
           <div class="proPic"></div>
@@ -83,5 +127,6 @@
     </div>
 
     <script src="JS/script.js"></script>
+    <script src="JS/order.js"></script>
   </body>
 </html>
