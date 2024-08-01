@@ -40,6 +40,10 @@ body {
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
 }
+.name {
+  color: white;
+  font-family: "Abril Fatface", serif;
+}
 .item1 {
   width: 10%;
   height: 10%;

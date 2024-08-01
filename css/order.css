@@ -10,10 +10,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 .container1 {
-  width: 80%;
-  height: 90vh;
+  width: 80vw;
+  height: 95vh;
   background: rgba(255, 255, 255, 0.5);
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
@@ -28,6 +29,7 @@ body {
 /* side bar styling start */
 .sidebar1 {
   grid-area: a;
+
   background: rgba(255, 105, 0, 0.7);
   display: flex;
   flex-direction: column;
@@ -38,10 +40,10 @@ body {
 }
 .item1 {
   width: 50px;
-  height: 50px;
+  height: 90px;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .item1:hover {
   background: rgb(247, 29, 0);
@@ -55,7 +57,7 @@ body {
   background-image: url("imges/Home.png");
   background-position: center;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .icon1 {
   width: 100%;
@@ -63,7 +65,7 @@ body {
   background-image: url("imges/Order.png");
   background-position: center;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .icon2 {
   width: 100%;
@@ -71,7 +73,7 @@ body {
   background-image: url("imges/Customer.png");
   background-position: center;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .icon3 {
   width: 100%;
@@ -79,7 +81,7 @@ body {
   background-image: url("imges/Report.png");
   background-position: center;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .icon4 {
   width: 100%;
@@ -87,7 +89,7 @@ body {
   background-image: url("imges/Item.png");
   background-position: center;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .name {
   width: 100%;
