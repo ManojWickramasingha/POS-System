@@ -46,46 +46,39 @@ document.getElementById("datefil").addEventListener("click", () => {
   document.getElementById("orderRecip").style.display = "none";
   let tble = document.getElementById("tblFilter");
   tble.style.display = "block";
-  let content = ` <tr>
-            <th scope="col">OrderId</th>
-            <th scope="col">Date</th>
-            <th scope="col">SalesPerson</th>
-            <th scope="col" id="price">Status</th>
-          </tr>`;
+  document.getElementById("title").innerText = "Date Filter";
+  let table = document.getElementById("bodytable");
+  let content = "";
 
   date.forEach((element) => {
     content += `<tr>
-            <td scope="row">${element.orderId}</td>
-            <td>${element.Date}</td>
-            <td>${element.salesPerson}</td>
-            <td>${element.status}</td>
-          </tr>`;
+              <td id="td1">${element.orderId}</td>
+              <td id="td2">${element.Date}</td>
+              <td id="td3">${element.salesPerson}</td>
+              <td id="td4">${element.status}</td>
+            </tr>`;
 
-    tble.innerHTML = content;
+    table.innerHTML = content;
   });
 });
 
 document.getElementById("priceFil").addEventListener("click", () => {
-  document.getElementById("price").innerText = "price";
   document.getElementById("orderRecip").style.display = "none";
   let tble = document.getElementById("tblFilter");
   tble.style.display = "block";
-  let content = ` <tr>
-            <th scope="col">OrderId</th>
-            <th scope="col">Date</th>
-            <th scope="col">SalesPerson</th>
-            <th scope="col" id="price">Status</th>
-          </tr>`;
+  let table = document.getElementById("bodytable");
+  document.getElementById("title").innerText = "Price Fiter";
+  let content = "";
 
   price.forEach((element) => {
     content += `<tr>
-              <th scope="row">${element.orderId}</th>
-              <td>${element.Date}</td>
-              <td>${element.salesPerson}</td>
-              <td>${element.price}</td>
+             <td id="td1">${element.orderId}</td>
+              <td id="td2">${element.Date}</td>
+              <td id="td3">${element.salesPerson}</td>
+              <td id="td4">${element.price}</td>
             </tr>`;
 
-    tble.innerHTML = content;
+    table.innerHTML = content;
   });
 });
 
@@ -93,21 +86,18 @@ document.getElementById("progreFil").addEventListener("click", () => {
   document.getElementById("orderRecip").style.display = "none";
   let tble = document.getElementById("tblFilter");
   tble.style.display = "block";
-  let content = ` <tr>
-            <th scope="col">OrderId</th>
-            <th scope="col">Date</th>
-            <th scope="col">SalesPerson</th>
-            <th scope="col" id="price">Status</th>
-          </tr>`;
+  let table = document.getElementById("bodytable");
+  document.getElementById("title").innerText = "Status Filter";
+  let content = "";
 
   date.forEach((element) => {
     content += `<tr>
-                <th scope="row">${element.orderId}</th>
-                <td>${element.Date}</td>
-                <td>${element.salesPerson}</td>
-                <td>${element.status}</td>
-              </tr>`;
+              <td id="td1">${element.orderId}</td>
+              <td id="td2">${element.Date}</td>
+              <td id="td3">${element.salesPerson}</td>
+              <td id="td4">${element.status}</td>
+            </tr>`;
 
-    tble.innerHTML = content;
+    table.innerHTML = content;
   });
 });
