@@ -408,3 +408,26 @@ function AddCart(x) {
       break;
   }
 }
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+document.getElementById("hidemenu").addEventListener("click", () => {
+  let toggle = document.getElementById("sidenav");
+  if (toggle.style.display == "none") {
+    toggle.style.display = "block";
+  } else {
+    toggle.style.display = "none";
+  }
+});
