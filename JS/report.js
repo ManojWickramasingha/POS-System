@@ -184,3 +184,23 @@ document.getElementById("SalesReport").addEventListener("click", () => {
     tablebody.innerHTML = cardbody;
   });
 });
+let Year = document.getElementById("year");
+let Month = document.getElementById("monthly");
+let Title = document.getElementById("title");
+var Value = "";
+Year.addEventListener("click", () => {
+  Year.style.backgroundColor = "rgb(238, 6, 6)";
+  Year.style.color = "white";
+  Month.style.backgroundColor = "white";
+  Month.style.color = "rgb(238, 6, 6)";
+  Value = Title.innerText;
+  Title.innerText += "(Annual)";
+});
+
+Month.addEventListener("click", () => {
+  Year.style.backgroundColor = "white";
+  Year.style.color = "rgb(238, 6, 6)";
+  Month.style.backgroundColor = "rgb(238, 6, 6)";
+  Month.style.color = "white";
+  Title.innerText = Value;
+});

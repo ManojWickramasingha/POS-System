@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>item table</title>
     <link rel="stylesheet" href="css/item.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/order.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +16,7 @@
     <!-- Container section start -->
     <div class="container4">
       <!-- Sidebar section start -->
-      <div class="sidebar1">
+      <div class="sidebar2">
         <div class="item1" onclick="myFunc()">
           <div class="icon"></div>
           <div class="hide"></div>
@@ -49,7 +47,25 @@
 
       <!-- headTitle section start -->
       <div class="headTitle">
-        <h1>MOS BUGGER</h1>
+        <div class="hide">
+          <i class="fa-solid fa-bars fa-xl dropbtn3" onclick="myFunction()"></i>
+          <div class="menu">
+            <div class="dropdown">
+              <button class="dropbtn1">
+                Fillter
+                <i class="fa-duotone fa-solid fa-caret-down"></i>
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a target="_blank" onclick="myFunc()">Home</a>
+                <a target="_blank" onclick="myFunc1()">Order</a>
+                <a target="_blank" onclick="myFunc2()">Customer</a>
+                <a target="_blank" onclick="myFunc3()">Report</a>
+                <a target="_blank" onclick="myFunc4()">Item</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="header">MOS BUGGER</h1>
       </div>
       <!-- headTile section end -->
 
@@ -57,7 +73,9 @@
       <div class="addItem">
         <div class="Additemcard">
           <h3 id="title">Add Item</h3>
-          <div class="picture"></div>
+          <div class="picture">
+            <div class="plusIcon"></div>
+          </div>
           <input type="text" name="code" id="code" placeholder="Item code" />
           <input type="text" name="name" id="name" placeholder="Item name" />
           <input
@@ -77,6 +95,7 @@
           </div>
           <div class="btton">
             <button class="Add" id="itemAdd">ADD</button>
+            <button class="Add1" id="itemup">Upadate</button>
             <button class="Cancel" id="itemCancel">Cancel</button>
           </div>
         </div>
@@ -84,19 +103,19 @@
       <!-- AddItem section end -->
 
       <div class="itemcardCollection" id="cardRow">
-        <div class="itemCard">
+        <div class="itemCard" id="item1">
           <div class="cardPic">
             <div class="CardPicItem"></div>
           </div>
 
           <div class="cardDetails">
             <div class="rate">
-              <p>15%</p>
+              <p id="disD">15%</p>
               <div class="star"></div>
             </div>
             <div class="namePrce">
-              <h3>Bugger</h3>
-              <p>(Regular)</p>
+              <h3 id="Iname">Bugger</h3>
+              <p id="Ipos">(Regular)</p>
             </div>
             <div class="stoke">
               <span>Code</span>
@@ -104,35 +123,37 @@
               <span>Stoke</span>
             </div>
             <div class="de">
-              <span>B01</span>
+              <span id="codeD">B01</span>
 
-              <span>7</span>
+              <span id="stockD">7</span>
             </div>
-            <p style="text-align: center; color: orangered">1,000.00</p>
+            <p style="text-align: center; color: orangered" id="priceD">
+              1,000.00
+            </p>
             <div class="line"></div>
             <div class="editDelete">
               <div class="edit">
                 <div class="iconEdit" id="itemedit"></div>
               </div>
               <div class="Delete">
-                <div class="iconDelete"></div>
+                <div class="iconDelete" id="itemdelete"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="itemCard">
+        <div class="itemCard" id="item2">
           <div class="cardPic">
             <div class="CardPicItem2"></div>
           </div>
 
           <div class="cardDetails">
             <div class="rate">
-              <p>7 %</p>
+              <p id="disD1">7 %</p>
               <div class="star"></div>
             </div>
             <div class="namePrce">
-              <h3>Pasta</h3>
-              <p>(Regular)</p>
+              <h3 id="Iname1">Pasta</h3>
+              <p id="Ipos1">(Regular)</p>
             </div>
             <div class="stoke">
               <span>Code</span>
@@ -140,35 +161,37 @@
               <span>Stoke</span>
             </div>
             <div class="de">
-              <span>P01</span>
+              <span id="codeD1">P01</span>
 
-              <span>8</span>
+              <span id="stockD1">8</span>
             </div>
-            <p style="text-align: center; color: orangered">1,500.00</p>
+            <p style="text-align: center; color: orangered" id="priceD1">
+              1,500.00
+            </p>
             <div class="line"></div>
             <div class="editDelete">
               <div class="edit">
-                <div class="iconEdit"></div>
+                <div class="iconEdit" id="itemedit1"></div>
               </div>
               <div class="Delete">
-                <div class="iconDelete"></div>
+                <div class="iconDelete" id="itemdelete1"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="itemCard">
+        <div class="itemCard" id="item3">
           <div class="cardPic">
             <div class="CardPicItem3"></div>
           </div>
 
           <div class="cardDetails">
             <div class="rate">
-              <p>16 %</p>
+              <p id="disD2">16 %</p>
               <div class="star"></div>
             </div>
             <div class="namePrce">
-              <h3>RosChicken</h3>
+              <h3 id="Iname2">RosChicken</h3>
               <p>(Full)</p>
             </div>
             <div class="stoke">
@@ -177,18 +200,20 @@
               <span>Stoke</span>
             </div>
             <div class="de">
-              <span>C01</span>
+              <span id="codeD2">C01</span>
 
-              <span>10</span>
+              <span id="stockD2">10</span>
             </div>
-            <p style="text-align: center; color: orangered">2,000.00</p>
+            <p style="text-align: center; color: orangered" id="priceD2">
+              2,000.00
+            </p>
             <div class="line"></div>
             <div class="editDelete">
               <div class="edit">
-                <div class="iconEdit"></div>
+                <div class="iconEdit" id="itemedit2"></div>
               </div>
               <div class="Delete">
-                <div class="iconDelete"></div>
+                <div class="iconDelete" id="itemdelete2"></div>
               </div>
             </div>
           </div>

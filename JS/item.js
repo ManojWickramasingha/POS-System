@@ -66,4 +66,73 @@ document.getElementById("itemCancel").addEventListener("click", () => {
 
 document.getElementById("itemedit").addEventListener("click", () => {
   document.getElementById("title").innerText = "Update Item";
+
+  document.getElementById("itemAdd").style.display = "none";
+  let Upadate = document.getElementById("itemup");
+  Upadate.style.display = "block";
+
+  Upadate.addEventListener("click", () => {
+    document.getElementById("codeD").innerText =
+      document.getElementById("code").value;
+    document.getElementById("Iname").innerText =
+      document.getElementById("name").value;
+    document.getElementById("stockD").innerText =
+      document.getElementById("quantity").value;
+    document.getElementById("priceD").innerText =
+      document.getElementById("price").value;
+    document.getElementById("disD").innerText =
+      document.getElementById("Discount").value;
+  });
+});
+
+document.getElementById("itemedit1").addEventListener("click", () => {
+  document.getElementById("title").innerText = "Update Item";
+  document.getElementById("itemAdd").style.display = "none";
+  let Upadate = document.getElementById("itemup");
+  Upadate.style.display = "block";
+
+  Upadate.addEventListener("click", () => {
+    document.getElementById("codeD1").innerText =
+      document.getElementById("code").value;
+    document.getElementById("Iname1").innerText =
+      document.getElementById("name").value;
+    document.getElementById("stockD1").innerText =
+      document.getElementById("quantity").value;
+    document.getElementById("priceD1").innerText =
+      document.getElementById("price").value;
+    document.getElementById("disD1").innerText =
+      document.getElementById("Discount").value;
+  });
+});
+
+document.getElementById("itemedit2").addEventListener("click", () => {
+  document.getElementById("title").innerText = "Update Item";
+  document.getElementById("itemAdd").style.display = "none";
+  let Upadate = document.getElementById("itemup");
+  Upadate.style.display = "block";
+
+  Upadate.addEventListener("click", () => {
+    document.getElementById("codeD2").innerText =
+      document.getElementById("code").value;
+    document.getElementById("Iname2").innerText =
+      document.getElementById("name").value;
+    document.getElementById("stockD2").innerText =
+      document.getElementById("quantity").value;
+    document.getElementById("priceD2").innerText =
+      document.getElementById("price").value;
+    document.getElementById("disD2").innerText =
+      document.getElementById("Discount").value;
+  });
+});
+
+document.getElementById("itemdelete").addEventListener("click", () => {
+  document.getElementById("item1").innerHTML = "";
+});
+
+document.getElementById("itemdelete1").addEventListener("click", () => {
+  document.getElementById("item2").innerHTML = "";
+});
+
+document.getElementById("itemdelete2").addEventListener("click", () => {
+  document.getElementById("item3").innerHTML = "";
 });

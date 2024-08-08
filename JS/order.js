@@ -118,3 +118,7 @@ window.onclick = function (event) {
     }
   }
 };
+
+document.getElementById("Tbtn").addEventListener("click", () => {
+  window.location.href = "location.html";
+});
